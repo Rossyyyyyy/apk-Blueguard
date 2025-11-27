@@ -5644,7 +5644,27 @@ app.use((err, req, res, next) => {
 ///NASA HULI LAGI DAPAT TO
 ///NASA HULI LAGI DAPAT TO
 const PORT = process.env.PORT || 5000;
-
+// Root endpoint - Health check
+app.get('/', (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: '🌊 BlueGuard API is running',
+    status: 'healthy',
+    timestamp: new Date().toISOString(),
+    environment: process.env.NODE_ENV || 'production',
+    endpoints: {
+      health: '/health',
+      status: '/status',
+      auth: {
+        login: '/login',
+        register: '/register'
+      },
+      reports: '/api/pcg-reports-pcg',
+      notifications: '/notifications',
+      chatbot: '/api/chatbot'
+    }
+  });
+});
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`✅ Server running on port ${PORT}`);
   console.log(`📍 Local: http://localhost:${PORT}`);
