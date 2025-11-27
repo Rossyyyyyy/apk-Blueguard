@@ -98,7 +98,7 @@ const Notifications: React.FC<NotificationsProps> = ({ navigation }) => {
 
       console.log('👤 Fetching user data...');
 
-      const response = await fetch('http://10.120.221.103:5000/me', {
+      const response = await fetch('https://apk-blueguard-rosssyyy.onrender.com/me', {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -144,7 +144,7 @@ const Notifications: React.FC<NotificationsProps> = ({ navigation }) => {
 
       console.log('📬 Fetching notifications...');
 
-      const response = await fetch('http://10.120.221.103:5000/notifications', {
+      const response = await fetch('https://apk-blueguard-rosssyyy.onrender.com/notifications', {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -258,7 +258,7 @@ const Notifications: React.FC<NotificationsProps> = ({ navigation }) => {
       console.log(`📖 Marking notification ${notificationId} as read`);
 
       const response = await fetch(
-        `http://10.120.221.103:5000/api/notifications/${notificationId}/read`, 
+        `https://apk-blueguard-rosssyyy.onrender.com/api/notifications/${notificationId}/read`, 
         {
           method: 'PUT',
           headers: {
@@ -322,7 +322,7 @@ const Notifications: React.FC<NotificationsProps> = ({ navigation }) => {
               console.log('📖 Marking all notifications as read...');
 
               const response = await fetch(
-                'http://10.120.221.103:5000/api/notifications/read-all', 
+                'https://apk-blueguard-rosssyyy.onrender.com/api/notifications/read-all', 
                 {
                   method: 'PUT',
                   headers: {
@@ -381,7 +381,7 @@ const Notifications: React.FC<NotificationsProps> = ({ navigation }) => {
               console.log(`🗑️ Deleting notification ${notificationId}`);
 
               const response = await fetch(
-                `http://10.120.221.103:5000/api/notifications/${notificationId}`, 
+                `https://apk-blueguard-rosssyyy.onrender.com/api/notifications/${notificationId}`, 
                 {
                   method: 'DELETE',
                   headers: {
@@ -451,7 +451,7 @@ const Notifications: React.FC<NotificationsProps> = ({ navigation }) => {
               console.log('🧹 Clearing all read notifications...');
 
               const response = await fetch(
-                'http://10.120.221.103:5000/api/notifications/clear-read', 
+                'https://apk-blueguard-rosssyyy.onrender.com/api/notifications/clear-read', 
                 {
                   method: 'DELETE',
                   headers: {

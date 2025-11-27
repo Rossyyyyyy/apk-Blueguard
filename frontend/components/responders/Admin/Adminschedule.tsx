@@ -123,7 +123,7 @@ const Adminschedule: React.FC<AdminScheduleProps> = ({ navigation }) => {
     const fetchSchedules = async () => {
       try {
         setIsLoading(true);
-        const apiUrl = 'http://10.120.221.103:5000';
+        const apiUrl = 'https://apk-blueguard-rosssyyy.onrender.com';
         const response = await fetch(`${apiUrl}/api/schedules`);
         
         if (!response.ok) {
@@ -146,7 +146,7 @@ const Adminschedule: React.FC<AdminScheduleProps> = ({ navigation }) => {
   // Handle status update
   const handleStatusUpdate = async (id: string, newStatus: string) => {
     try {
-      const apiUrl = 'http://10.120.221.103:5000';
+      const apiUrl = 'https://apk-blueguard-rosssyyy.onrender.com';
       const response = await fetch(`${apiUrl}/api/schedules/${id}/status`, {
         method: 'PUT',
         headers: {

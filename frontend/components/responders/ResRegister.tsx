@@ -97,7 +97,7 @@ const ResRegister: React.FC<ResRegisterProps> = ({ navigation }) => {
     try {
       console.log('Sending registration request with data:', formData);
       
-      const response = await fetch('http://10.120.221.103:5000/api/register-responder', {
+      const response = await fetch('https://apk-blueguard-rosssyyy.onrender.com/api/register-responder', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),

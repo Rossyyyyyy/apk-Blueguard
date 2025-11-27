@@ -118,7 +118,7 @@ const RewardClaimReceipt: React.FC<RewardClaimReceiptProps> = ({
       
       // Submit the claim to the server
       const response = await axios.post<{ success: boolean }>(
-        'http://10.120.221.103:5000/claim-reward',
+        'https://apk-blueguard-rosssyyy.onrender.com/claim-reward',
         claimData,
         {
           headers: { Authorization: `Bearer ${token}` }

@@ -121,7 +121,7 @@ const AdminDeactivated: React.FC<AdminDeactivatedProps> = ({ navigation }) => {
   const fetchDeactivatedUsers = async () => {
     try {
       setIsLoading(true);
-      const apiUrl = 'http://10.120.221.103:5000';
+      const apiUrl = 'https://apk-blueguard-rosssyyy.onrender.com';
       const response = await fetch(`${apiUrl}/api/deactivated-users-responders`);
       const data = await response.json();
       setDeactivatedUsers(data);
@@ -155,7 +155,7 @@ const AdminDeactivated: React.FC<AdminDeactivatedProps> = ({ navigation }) => {
           text: 'Reactivate',
           onPress: async () => {
             try {
-              const apiUrl = 'http://10.120.221.103:5000';
+              const apiUrl = 'https://apk-blueguard-rosssyyy.onrender.com';
               const url = user.responderType
                 ? `${apiUrl}/api/responders/${user._id}/toggle-status`
                 : `${apiUrl}/api/users/${user._id}/status`;

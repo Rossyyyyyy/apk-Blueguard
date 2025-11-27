@@ -14,7 +14,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 // API Base URL
-const API_BASE_URL = 'http://10.120.221.103:5000';
+const API_BASE_URL = 'https://apk-blueguard-rosssyyy.onrender.com';
 
 // NewsAPI Key
 const NEWS_API_KEY = '6f020c7649674b828d326bde01d0e3ff';

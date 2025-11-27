@@ -44,7 +44,7 @@ interface UserData {
   };
 }
 
-const API_BASE_URL = 'http://10.120.221.103:5000';
+const API_BASE_URL = 'https://apk-blueguard-rosssyyy.onrender.com';
 
 const PendingReports: React.FC<PendingReportsProps> = ({ navigation }) => {
   const [loading, setLoading] = useState<boolean>(true);

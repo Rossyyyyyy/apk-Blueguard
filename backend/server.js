@@ -88,6 +88,7 @@ const allowedOrigins = [
   'http://localhost:19006',
   'http://127.0.0.1:19000',
   'http://127.0.0.1:19006',
+  'https://apk-blueguard-rosssyyy.onrender.com'
 ];
 
 

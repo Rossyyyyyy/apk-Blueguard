@@ -100,7 +100,7 @@ export default function Register({ navigation }: Props) {
     }
   
     try {
-      const response = await axios.post<RegisterResponse>('http://10.120.221.103:5000/register', {
+      const response = await axios.post<RegisterResponse>('https://apk-blueguard-rosssyyy.onrender.com/register', {
         name,
         email,
         password,

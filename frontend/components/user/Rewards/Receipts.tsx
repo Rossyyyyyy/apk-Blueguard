@@ -53,7 +53,7 @@ const Receipts: React.FC<ReceiptsProps> = ({ navigation }) => {
       }
 
       const response = await axios.get<{ success: boolean; claims: Claim[] }>(
-        'http://10.120.221.103:5000/user-claims',
+        'https://apk-blueguard-rosssyyy.onrender.com/user-claims',
         {
           headers: { Authorization: `Bearer ${token}` }
         }

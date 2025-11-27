@@ -42,7 +42,7 @@ type RootStackParamList = {
   Profile: undefined;
   OceanCleanupGame: undefined;
   Game: undefined;
-  OceanQuizGame: undefined;
+  OceanMemoryGame: undefined;
 };
 
 type DashScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, 'Dash'>;
@@ -121,7 +121,7 @@ const Dash: React.FC<Props> = ({ navigation }) => {
           return;
         }
 
-        const response = await fetch('http://10.120.221.103:5000/me', {
+        const response = await fetch('https://apk-blueguard-rosssyyy.onrender.com/me', {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${token}`,
@@ -149,11 +149,11 @@ const Dash: React.FC<Props> = ({ navigation }) => {
     const fetchRealStats = async (token: string, userEmail: string) => {
       try {
         const [reportsRes, schedulesRes, cleanupRes] = await Promise.all([
-          fetch('http://10.120.221.103:5000/get-reported', {
+          fetch('https://apk-blueguard-rosssyyy.onrender.com/get-reported', {
             headers: { 'Authorization': `Bearer ${token}` }
           }),
-          fetch('http://10.120.221.103:5000/api/schedules'),
-          fetch(`http://10.120.221.103:5000/cleanups?email=${encodeURIComponent(userEmail)}`, {
+          fetch('https://apk-blueguard-rosssyyy.onrender.com/api/schedules'),
+          fetch(`https://apk-blueguard-rosssyyy.onrender.com/cleanups?email=${encodeURIComponent(userEmail)}`, {
             headers: { 'Authorization': `Bearer ${token}` }
           })
         ]);
@@ -219,7 +219,7 @@ const Dash: React.FC<Props> = ({ navigation }) => {
     try {
       console.log('📬 Fetching unread notifications count...');
       
-      const response = await fetch('http://10.120.221.103:5000/notifications', {
+      const response = await fetch('https://apk-blueguard-rosssyyy.onrender.com/notifications', {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -242,7 +242,7 @@ const Dash: React.FC<Props> = ({ navigation }) => {
 
   const fetchSuggestedUsers = async (token: string) => {
     try {
-      const response = await fetch('http://10.120.221.103:5000/api/suggested-users', {
+      const response = await fetch('https://apk-blueguard-rosssyyy.onrender.com/api/suggested-users', {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -255,7 +255,7 @@ const Dash: React.FC<Props> = ({ navigation }) => {
         setSuggestedUsers(data.users);
         
         const statusPromises = data.users.map((user: SuggestedUser) =>
-          fetch(`http://10.120.221.103:5000/api/is-following/${user._id}`, {
+          fetch(`https://apk-blueguard-rosssyyy.onrender.com/api/is-following/${user._id}`, {
             headers: {
               'Authorization': `Bearer ${token}`,
               'Content-Type': 'application/json'
@@ -283,8 +283,8 @@ const Dash: React.FC<Props> = ({ navigation }) => {
       if (!token) return;
 
       const url = currentlyFollowing 
-        ? `http://10.120.221.103:5000/api/unfollow/${userId}`
-        : `http://10.120.221.103:5000/api/follow/${userId}`;
+        ? `https://apk-blueguard-rosssyyy.onrender.com/api/unfollow/${userId}`
+        : `https://apk-blueguard-rosssyyy.onrender.com/api/follow/${userId}`;
       
       const method = currentlyFollowing ? 'DELETE' : 'POST';
 
@@ -462,7 +462,7 @@ const Dash: React.FC<Props> = ({ navigation }) => {
             
             <TouchableOpacity 
               style={styles.gameButton} 
-              onPress={() => navigation.navigate('OceanQuizGame')}
+              onPress={() => navigation.navigate('OceanMemoryGame')}
             >
               <View style={styles.gameButtonIcon}>
                 <Ionicons name="help-circle" size={24} color="#000957" />

@@ -10,7 +10,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 // API Base URL
-const API_BASE_URL = 'http://10.120.221.103:5000';
+const API_BASE_URL = 'https://apk-blueguard-rosssyyy.onrender.com';
 
 // Define navigation types
 type RootStackParamList = {

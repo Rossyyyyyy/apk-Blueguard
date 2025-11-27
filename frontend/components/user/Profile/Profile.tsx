@@ -24,7 +24,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 
 const { width } = Dimensions.get('window');
-const API_BASE_URL = 'http://10.120.221.103:5000';
+const API_BASE_URL = 'https://apk-blueguard-rosssyyy.onrender.com';
 
 // Type definitions
 interface User {

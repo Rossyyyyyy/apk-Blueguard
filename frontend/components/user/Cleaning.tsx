@@ -64,7 +64,7 @@ interface NavItem {
   screen: keyof RootStackParamList;
 }
 
-const API_BASE_URL = 'http://10.120.221.103:5000';
+const API_BASE_URL = 'https://apk-blueguard-rosssyyy.onrender.com';
 
 const Cleaning: React.FC<CleaningProps> = ({ navigation }) => {
   const [images, setImages] = useState<string[]>([]);

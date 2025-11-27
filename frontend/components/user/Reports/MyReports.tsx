@@ -18,7 +18,7 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { ReportDonutChart, ReportBarChart } from './ChartComponents';
 
 // ########## GLOBAL API URL (EASIER TO MANAGE) ##########
-const API_URL = 'http://10.120.221.103:5000';
+const API_URL = 'https://apk-blueguard-rosssyyy.onrender.com';
 
 // Type definitions
 interface Report {

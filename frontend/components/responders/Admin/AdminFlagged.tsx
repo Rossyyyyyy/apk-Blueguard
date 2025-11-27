@@ -79,7 +79,7 @@ const AdminFlagged: React.FC<AdminFlaggedProps> = ({ navigation }) => {
   const [filterPriority, setFilterPriority] = useState<string>('all');
   const [filterIncident, setFilterIncident] = useState<string>('all');
 
-  const API_URL = Platform.OS === 'web' ? 'http://localhost:5000' : 'http://10.120.221.103:5000';
+  const API_URL = Platform.OS === 'web' ? 'https://apk-blueguard-rosssyyy.onrender.com' : 'https://apk-blueguard-rosssyyy.onrender.com';
 
   useEffect(() => {
     const subscription = Dimensions.addEventListener('change', ({ window }) => {

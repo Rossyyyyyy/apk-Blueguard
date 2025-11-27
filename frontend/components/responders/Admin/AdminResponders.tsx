@@ -129,7 +129,7 @@ const Responders: React.FC<RespondersProps> = ({ navigation }) => {
     const fetchResponders = async () => {
       try {
         setIsLoading(true);
-        const apiUrl = 'http://10.120.221.103:5000';
+        const apiUrl = 'https://apk-blueguard-rosssyyy.onrender.com';
         const response = await fetch(`${apiUrl}/api/responders`);
         const data = await response.json();
         setResponders(data);
@@ -155,7 +155,7 @@ const Responders: React.FC<RespondersProps> = ({ navigation }) => {
           text: 'Confirm',
           onPress: async () => {
             try {
-              const apiUrl = 'http://10.120.221.103:5000';
+              const apiUrl = 'https://apk-blueguard-rosssyyy.onrender.com';
               const response = await fetch(`${apiUrl}/api/responders/${id}/toggle-status`, {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },

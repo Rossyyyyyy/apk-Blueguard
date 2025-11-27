@@ -67,7 +67,7 @@ interface GroupChat {
   messages: Message[];
 }
 
-const API_URL = 'http://10.120.221.103:5000';
+const API_URL = 'https://apk-blueguard-rosssyyy.onrender.com';
 
 // Icon Component Fallback
 const IconFallback = ({ name, size = 24, color = '#000', style = {} }: any) => {

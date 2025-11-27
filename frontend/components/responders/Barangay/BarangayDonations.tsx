@@ -23,7 +23,7 @@ import { useNavigation } from '@react-navigation/native';
 const { width } = Dimensions.get('window');
 const isWeb = Platform.OS === 'web';
 
-const API_BASE_URL = 'http://10.120.221.103:5000';
+const API_BASE_URL = 'https://apk-blueguard-rosssyyy.onrender.com';
 
 interface Donation {
   _id: string;

@@ -62,7 +62,7 @@ const Report: React.FC<Props> = ({ navigation }) => {
           return;
         }
 
-        const response = await fetch('http://10.120.221.103:5000/me', {
+        const response = await fetch('https://apk-blueguard-rosssyyy.onrender.com/me', {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${token}`,
@@ -154,7 +154,7 @@ const Report: React.FC<Props> = ({ navigation }) => {
       console.log('🤖 Analyzing incident type with AI...');
       const token = await AsyncStorage.getItem('token');
       
-      const aiResponse = await fetch('http://10.120.221.103:5000/detect-incident-type', {
+      const aiResponse = await fetch('https://apk-blueguard-rosssyyy.onrender.com/detect-incident-type', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -217,7 +217,7 @@ const Report: React.FC<Props> = ({ navigation }) => {
   
     try {
       const token = await AsyncStorage.getItem('token');
-      const response = await fetch('http://10.120.221.103:5000/submit-report', {
+      const response = await fetch('https://apk-blueguard-rosssyyy.onrender.com/submit-report', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,

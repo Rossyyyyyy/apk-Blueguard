@@ -48,10 +48,10 @@ const ResLogin: React.FC<ResLoginProps> = ({ navigation }) => {
   const getApiUrl = () => {
     if (Platform.OS === 'web') {
       // For web, use localhost or your production URL
-      return 'http://10.120.221.103:5000';
+      return 'https://apk-blueguard-rosssyyy.onrender.com';
     } else {
       // For mobile, use your local IP
-      return 'http://10.120.221.103:5000';
+      return 'https://apk-blueguard-rosssyyy.onrender.com';
     }
   };
 

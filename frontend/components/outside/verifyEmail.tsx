@@ -49,7 +49,7 @@ const VerifyEmail = ({ route, navigation }: Props) => {
     const verifyEmail = async () => {
       try {
         const response = await axios.get<VerifyResponse>(
-          `http://10.120.221.103:5000/verify-email?token=${token}`
+          `https://apk-blueguard-rosssyyy.onrender.com/verify-email?token=${token}`
         );
         
         if (response.data.success) {

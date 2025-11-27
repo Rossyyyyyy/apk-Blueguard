@@ -122,7 +122,7 @@ const AdminDonations: React.FC<AdminDonationsProps> = ({ navigation }) => {
   const fetchDonations = async () => {
     setIsLoading(true);
     try {
-      const apiUrl = 'http://10.120.221.103:5000';
+      const apiUrl = 'https://apk-blueguard-rosssyyy.onrender.com';
       
       // ✅ GET THE AUTH TOKEN FROM AsyncStorage
       const token = await AsyncStorage.getItem('authToken');

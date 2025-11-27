@@ -20,7 +20,7 @@ import { PieChart, BarChart, LineChart } from 'react-native-chart-kit';
 const { width, height } = Dimensions.get('window');
 
 // API Base URL
-const API_BASE_URL = 'http://10.120.221.103:5000';
+const API_BASE_URL = 'https://apk-blueguard-rosssyyy.onrender.com';
 
 // Chart Colors
 const CHART_COLORS = ['#4E79A7', '#F28E2B', '#E15759', '#76B7B2', '#59A14F', '#EDC949', '#AF7AA1', '#FF9DA7'];

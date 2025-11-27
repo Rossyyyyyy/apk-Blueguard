@@ -76,7 +76,7 @@ const DashCharts: React.FC<DashChartsProps> = ({ navigation }) => {
         return;
       }
 
-      const response = await fetch('http://10.120.221.103:5000/me', {
+      const response = await fetch('https://apk-blueguard-rosssyyy.onrender.com/me', {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -101,7 +101,7 @@ const DashCharts: React.FC<DashChartsProps> = ({ navigation }) => {
   const fetchStats = async (token: string): Promise<void> => {
     try {
       // Fetch reports for statistics
-      const reportsResponse = await fetch('http://10.120.221.103:5000/get-reported', {
+      const reportsResponse = await fetch('https://apk-blueguard-rosssyyy.onrender.com/get-reported', {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,

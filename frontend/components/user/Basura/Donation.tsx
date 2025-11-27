@@ -45,7 +45,7 @@ const Donation: React.FC<Props> = ({ navigation }) => {
   const [currentStep, setCurrentStep] = useState<number>(1);
   const [otherWasteText, setOtherWasteText] = useState<string>("");
 
-  const API_BASE_URL = 'http://10.120.221.103:5000';
+  const API_BASE_URL = 'https://apk-blueguard-rosssyyy.onrender.com';
 
   // Helper function to get the appropriate icon for the waste type
   const getWasteIcon = (type: string): keyof typeof Ionicons.glyphMap => {

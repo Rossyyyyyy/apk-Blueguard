@@ -32,6 +32,7 @@ import ResRegister from './components/responders/ResRegister';
 import CheckSchedule from './components/user/Basura/CheckSchedule';
 import Schedule from './components/user/Basura/Schedule';
 import Donation from './components/user/Basura/Donation';
+import OceanMemoryGame from './components/user/Games/OceanMemoryGame';
 
 // Admin Components
 import Admin from './components/responders/Admin/Admin';
@@ -113,6 +114,7 @@ export default function App() {
         <Stack.Screen name="Knowledge" component={Knowledge} />
         <Stack.Screen name="Profile" component={Profile} />
         <Stack.Screen name="OceanCleanupGame" component={OceanCleanupGame} />
+        <Stack.Screen name="OceanMemoryGame" component={OceanMemoryGame} />
         <Stack.Screen name="OceanNews" component={OceanNews} />
         <Stack.Screen name="OceanLife" component={OceanLife} />
         <Stack.Screen name="Chat" component={Chat} />

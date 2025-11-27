@@ -53,7 +53,7 @@ const ReportsDistributionChart: React.FC = () => {
         return;
       }
 
-      const response = await fetch('http://10.120.221.103:5000/get-reported', {
+      const response = await fetch('https://apk-blueguard-rosssyyy.onrender.com/get-reported', {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,

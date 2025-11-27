@@ -151,7 +151,7 @@ const AdminUsers: React.FC = () => {
   const fetchUsers = async () => {
     try {
       setLoading(true);
-      const apiUrl = Platform.OS === 'web' ? 'http://localhost:5000' : 'http://10.120.221.103:5000';
+      const apiUrl = Platform.OS === 'web' ? 'https://apk-blueguard-rosssyyy.onrender.com' : 'https://apk-blueguard-rosssyyy.onrender.com';
       const response = await fetch(`${apiUrl}/api/users`);
       
       if (!response.ok) {
@@ -227,7 +227,7 @@ const AdminUsers: React.FC = () => {
 
   const toggleStatus = async (id: string) => {
     try {
-      const apiUrl = Platform.OS === 'web' ? 'http://localhost:5000' : 'http://10.120.221.103:5000';
+      const apiUrl = Platform.OS === 'web' ? 'https://apk-blueguard-rosssyyy.onrender.com' : 'https://apk-blueguard-rosssyyy.onrender.com';
       const response = await fetch(`${apiUrl}/api/users/${id}/status`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },

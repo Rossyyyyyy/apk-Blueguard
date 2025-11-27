@@ -20,7 +20,7 @@ const { width, height } = Dimensions.get('window');
 const isWeb = Platform.OS === 'web';
 
 // API Base URL
-const API_BASE_URL = 'http://10.120.221.103:5000';
+const API_BASE_URL = 'https://apk-blueguard-rosssyyy.onrender.com';
 
 const STATUS_OPTIONS = ['Ongoing', 'Completed', 'Cancelled'];
 

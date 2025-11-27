@@ -50,9 +50,9 @@ interface ErrorResponse {
 // API URL configuration - use localhost for web, IP for mobile
 const getApiUrl = () => {
   if (Platform.OS === 'web') {
-    return 'http://localhost:5000';
+    return 'https://apk-blueguard-rosssyyy.onrender.com';
   }
-  return 'http://10.120.221.103:5000';
+  return 'https://apk-blueguard-rosssyyy.onrender.com';
 };
 
 export default function Login({ navigation }: Props) {

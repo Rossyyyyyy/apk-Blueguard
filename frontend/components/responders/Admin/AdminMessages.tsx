@@ -62,7 +62,7 @@ interface GroupChat {
   messages: Message[];
 }
 
-const API_URL = 'http://10.120.221.103:5000';
+const API_URL = 'https://apk-blueguard-rosssyyy.onrender.com';
 
 const AdminMessages: React.FC<MessagesProps> = ({ navigation }) => {
   const [groupChat, setGroupChat] = useState<GroupChat>({

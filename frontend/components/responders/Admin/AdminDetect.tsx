@@ -15,7 +15,7 @@ import * as ImagePicker from "expo-image-picker";
 import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const API_URL = "http://10.120.221.103:5000";
+const API_URL = "https://apk-blueguard-rosssyyy.onrender.com";
 
 interface DetectionResult {
   recyclable?: string[];

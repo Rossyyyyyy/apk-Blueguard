@@ -85,7 +85,7 @@ const AVATAR_COLORS: string[] = [
 ];
 
 // API Base URL
-const API_BASE_URL = 'http://10.120.221.103:5000';
+const API_BASE_URL = 'https://apk-blueguard-rosssyyy.onrender.com';
 
 const Chat: React.FC<ChatProps> = ({ route, navigation }) => {
   const [messages, setMessages] = useState<Message[]>([]);

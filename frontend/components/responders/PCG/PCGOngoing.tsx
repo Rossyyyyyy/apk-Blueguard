@@ -18,7 +18,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { Picker } from '@react-native-picker/picker';
 
 const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get('window');
-const API_URL = 'http://10.120.221.103:5000';
+const API_URL = 'https://apk-blueguard-rosssyyy.onrender.com';
 
 const STATUS_OPTIONS = ['Ongoing', 'Completed', 'Cancelled'];
 

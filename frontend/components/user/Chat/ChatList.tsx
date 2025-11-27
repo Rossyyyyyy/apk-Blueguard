@@ -53,7 +53,7 @@ interface ChatListProps {
 }
 
 // API Base URL
-const API_BASE_URL = 'http://10.120.221.103:5000';
+const API_BASE_URL = 'https://apk-blueguard-rosssyyy.onrender.com';
 
 const ChatList: React.FC<ChatListProps> = ({ navigation }) => {
   const [loading, setLoading] = useState<boolean>(true);

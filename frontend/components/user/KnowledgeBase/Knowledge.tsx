@@ -92,7 +92,7 @@ const Knowledge: React.FC<KnowledgeProps> = ({ navigation }) => {
 
       console.log('📬 Fetching unread notifications count...');
       
-      const response = await fetch('http://10.120.221.103:5000/notifications', {
+      const response = await fetch('https://apk-blueguard-rosssyyy.onrender.com/notifications', {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,

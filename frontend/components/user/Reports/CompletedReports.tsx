@@ -88,7 +88,7 @@ const CompletedReports: React.FC<CompletedReportsProps> = ({ navigation }) => {
         return;
       }
 
-      const response = await fetch('http://10.120.221.103:5000/me', {
+      const response = await fetch('https://apk-blueguard-rosssyyy.onrender.com/me', {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -113,7 +113,7 @@ const CompletedReports: React.FC<CompletedReportsProps> = ({ navigation }) => {
 
   const fetchCompletedReports = async (token: string, userName: string): Promise<void> => {
     try {
-      const response = await fetch('http://10.120.221.103:5000/get-completed-reports', {
+      const response = await fetch('https://apk-blueguard-rosssyyy.onrender.com/get-completed-reports', {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,

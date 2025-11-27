@@ -143,7 +143,7 @@ const Rewards: React.FC<RewardsProps> = ({ navigation }) => {
     try {
       console.log('📬 Fetching unread notifications count...');
       
-      const response = await fetch('http://10.120.221.103:5000/notifications', {
+      const response = await fetch('https://apk-blueguard-rosssyyy.onrender.com/notifications', {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -182,7 +182,7 @@ const Rewards: React.FC<RewardsProps> = ({ navigation }) => {
         console.log('Fetching user data with token:', token.substring(0, 10) + '...');
 
         try {
-          const userResponse = await axios.get<{ success: boolean; user: UserData }>('http://10.120.221.103:5000/me', {
+          const userResponse = await axios.get<{ success: boolean; user: UserData }>('https://apk-blueguard-rosssyyy.onrender.com/me', {
             headers: { Authorization: `Bearer ${token}` }
           });
 
@@ -195,7 +195,7 @@ const Rewards: React.FC<RewardsProps> = ({ navigation }) => {
             await fetchUnreadNotifications(token);
             
             try {
-              const cleanupResponse = await axios.get<{ success: boolean; cleanups: Cleanup[] }>('http://10.120.221.103:5000/cleanups', {
+              const cleanupResponse = await axios.get<{ success: boolean; cleanups: Cleanup[] }>('https://apk-blueguard-rosssyyy.onrender.com/cleanups', {
                 headers: { Authorization: `Bearer ${token}` },
                 params: { email: userResponse.data.user.email }
               });
@@ -214,7 +214,7 @@ const Rewards: React.FC<RewardsProps> = ({ navigation }) => {
             }
 
             try {
-              const claimsResponse = await axios.get<{ success: boolean; claims: Claim[] }>('http://10.120.221.103:5000/user-claims', {
+              const claimsResponse = await axios.get<{ success: boolean; claims: Claim[] }>('https://apk-blueguard-rosssyyy.onrender.com/user-claims', {
                 headers: { Authorization: `Bearer ${token}` }
               });
 
